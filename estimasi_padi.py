@@ -12,7 +12,7 @@ Suhu_rata_rata = st.number_input('Derajat suhu rata-rata dalam setahun (celsius)
 
 predict = ''
 
-if st.button('Estimasi Nilai'):
+if st.button('Proses'):
     predict = model.predict(
         [[Luas_Panen, Curah_hujan, Kelembapan, Suhu_rata_rata]]
     )
